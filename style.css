@@ -29,11 +29,6 @@
 ul{
     width:300px;
 }
-ul * {
-    font-size: 18px;
-    animation-duration: 0.1s;
-    animation-name: slidein;
-}
 
 @keyframes slidein {
     from {
