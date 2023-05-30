@@ -27,7 +27,7 @@
 
 		  var modalContent = document.createElement('div');
 		  modalContent.className = 'modal-content';
-		  modalContent.innerHTML = '<p>Wheatley: Скажи "Яблоко"</p><button id="jumpButton">прыгнуть</button>';
+		  modalContent.innerHTML = '<p>Wheatley: Скажи "ЯБлоко"</p><button id="jumpButton">прыгнуть</button>';
 
 		  modal.appendChild(modalContent);
 		  document.body.appendChild(modal);
@@ -52,9 +52,9 @@
                     for (const [key, value] of Object.entries(JSON.parse(text)[0])) {
                         const newEl = document.createElement("li")
                         newEl.appendChild(document.createTextNode(`${key}: ${value}`))
-                        el.appendChild(newEl)
-                        
+                        await(20)                        
                     	}
+		el.appendChild(newEl)
 		}
                 })()
             }
