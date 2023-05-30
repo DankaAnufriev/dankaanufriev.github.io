@@ -18,6 +18,35 @@
     background-color: #4CAF50;
     color: white;
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24vh;
+    justify-content: center;
+}
+
+ul{
+    width:300px;
+}
+ul * {
+    font-size: 18px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -50px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
 .container {
   display: flex;
   flex-direction: column;
