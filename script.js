@@ -32,6 +32,6 @@ function sleep(ms) {
                         el.appendChild(newEl)
                         await sleep(100)
                     }
-                  
+                  document.body.appendChild(el);
                 })()
             }
