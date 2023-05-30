@@ -52,9 +52,10 @@
                     for (const [key, value] of Object.entries(JSON.parse(text)[0])) {
                         const newEl = document.createElement("li")
                         newEl.appendChild(document.createTextNode(`${key}: ${value}`))
-                        await(20)                        
+			el.appendChild(newEl)
+                        await(5)                        
                     	}
-		el.appendChild(newEl)
+		
 		}
                 })()
             }
